@@ -1,0 +1,258 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR','sans-serif';
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ------------------------------nav css------------------------------ */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom : 0.001px solid rgb(216, 216, 216);
+  background-color: white;
+  padding: 13px;
+}
+
+
+.navbar_logo img {
+  position: relative;
+  width: 110px;
+  height: 52px;
+}
+
+.navbar_menu {
+  display: flex;
+  font-size: 20px;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  margin-left: min(50%, 800px);
+}
+
+.navbar_menu li {
+  font-size: 19px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.navbar_menu li a:hover {
+  font-weight: bold;
+  color : rgb(26, 26, 164);
+}
+
+
+
+/* header 부분 css */
+.bg_wrapper{
+  background-color: rgba(241, 241, 241, 0.575);
+  margin-bottom: 30px;
+}
+
+
+/* main 부분 css */
+.main_bg {
+  width:100%;
+  max-width: 1600px;
+  min-height:720px;
+  background-image: url('../img/main_bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: 0 auto;
+
+}
+
+/* 배경 이미지를 반투명 검정으로 가리기 */
+.main_bg_dark {
+  max-width: 1600px;
+  min-height:720px;
+  background-size: 100% 100%;
+  background-color: rgba(0, 0, 0, 0.67);
+  
+}
+
+
+
+
+
+
+
+.section {
+  padding: 16px;
+  text-align: center;
+}
+
+/* 카드들 레이아웃 */
+.about {
+  display: inline-flex;
+  gap: 1em;
+  margin-top: 24px;
+}
+/* 카드와 아이콘 */
+.about__card {
+  padding: 48px;
+  text-align: center;
+  color: white;
+  background-color: #3e3f3f;
+  border-radius: 12px;
+}
+.about__icon {
+  width: 100px;
+  height: 150px;
+  opacity: 0.25;
+}
+/* 카드 안의 텍스트 */
+.about__title._1 {
+  color: #FFB974;
+}
+.about__title._2 {
+  color: #4e88c2;
+}
+.about__title._3 {
+  color: #FFBDCE;
+}
+
+.about__text {
+  margin-top: 0.8em;
+  font-size: 18px;
+}
+
+.about__card {
+  width: 200px;
+  
+  transition: all 350ms;
+}
+/* 영역에 마우스 오버시 해당 카드 외 축소 */
+.about:hover .about__card:not(:hover) {
+  transform: scale(0.9);
+}
+  /* 흐림 필터링을 위한 덮개 */
+.about:hover .about__card:not(:hover)::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
+/* 롤 오버된 카드 */
+.about__card:hover {
+  transform: scale(1.04);
+}
+.about__card:hover .about__icon {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+.bg_big_text_slogan {
+  padding-top:50px;
+  /* max-width:1600px;
+  min-height:140px; */
+  margin:0 auto;
+  text-align:center;
+  color:white;
+  font-size:40px;
+}
+
+
+.bg_text_btn{
+  text-align: center;
+  padding-right:33px;
+}
+.bg_text_btn_lr{
+  display: inline-flex;
+}
+.bg_text_btn_left {
+  width:33rem;
+  min-height:8rem;
+  max-width: 550px;
+  text-align:center;
+  color:white
+}
+.bg_text_btn_right {
+  width:33rem;
+  min-height:8rem;
+  max-width: 550px;
+  text-align:center;
+  color: white
+}
+
+
+
+
+.bg_small_text{
+  letter-spacing:-3px;
+  font-size:2rem;
+}
+
+.bg_big_text{
+  font-size:4rem;
+  width:100%;
+}
+
+.bg_btn{
+  padding-top : 2.5rem;
+}
+
+.bg_btn_style{
+  font-weight:bold;
+  color:white;
+  font-size:1.2rem;
+  border-radius: 3px;
+  border:0;
+  background-color: #313131;
+  width:9rem;
+  height:3.5rem;
+  cursor: pointer;
+}
+
+.bg_btn_style:hover{
+  background-color: white;
+  font-weight: bold;
+  color:black;
+}
+
+/* ------------------------------footer css------------------------------ */
+.footer {
+  font-size: 0.7rem;
+  background-color:#313131;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+  padding: 2rem;
+}
+
+.footer_list {
+  list-style: none;   
+  color: lightgrey;
+  letter-spacing: 2px;
+  border-right: 0.1px solid lightgray;
+}
+.footer_list li {
+  margin: 10px 150px 5px;
+  text-align: center;
+  margin-left: 130px;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 0.7rem;
+  color: grey;
+  margin-left: 150px;
+  margin-right: 150px;
+}
