@@ -102,7 +102,7 @@ body{ background-color: #ededed; }
   width:310px;
   height: 40px;
   font-size:15px;
-  background-color: #df3278;
+  background-color: rgb(77, 69, 224);
   color:#fff;
   border:none;
   cursor: pointer;
@@ -110,7 +110,7 @@ body{ background-color: #ededed; }
 }
 
 .btn:hover{
-  background:#ca296a;
+  background:rgb(64, 56, 220);
 }
 
 hr{

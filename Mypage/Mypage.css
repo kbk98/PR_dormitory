@@ -19,7 +19,6 @@ a {
   padding: 13px;
 }
 
-
 .navbar_logo img {
   position: relative;
   width: 110px;
@@ -43,10 +42,15 @@ a {
 
 .navbar_menu li a:hover {
   font-weight: bold;
-  color : rgb(26, 26, 164);
+  color : rgb(77, 69, 224);
 }
 
-/* ------------------------------main1 css--------------1---------------- */
+/* ------------------------------main1 css------------------------------ */
+.gray_sec {
+  background-color:rgb(248,249,250) ;
+  padding-top:1rem;
+  padding-bottom: 2rem;
+}
 
 .container {
   text-align:center;
@@ -54,31 +58,24 @@ a {
   padding-right : 10rem;
 }
 
-.gray_sec{
-  background-color:rgb(248,249,250) ;
-  padding-top:1rem;
-  padding-bottom: 2rem;
-}
-
-.big_title{
+.big_title {
   font-size:2rem; 
   font-weight:bold;
 }
 
-.small_title{
+.small_title {
   margin-top:0.5rem; 
   font-size:1rem; 
   color:rgb(199, 199, 199)
 }
 
 /* ------------------------------main2 css------------------------------ */
-
-.white_sec{
+.white_sec {
   background-color: white;
   padding-bottom: 1rem;
 }
 
-.my_box_wrap{
+.my_box_wrap {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -89,7 +86,7 @@ a {
   padding-right : 12rem;
 }
 
-.my_box{
+.my_box {
   display: flex;
   flex-direction: column;
   width: 28rem;
@@ -101,7 +98,7 @@ a {
   font-size:1rem;
 }
 
-.my_box_title{
+.my_box_title {
   display: flex;
   flex-direction: row;
   justify-content:space-between;
@@ -110,12 +107,12 @@ a {
   font-weight: bold;
 }
 
-.my_box_title i{
+.my_box_title i {
   margin-right:1rem;
   color:rgb(136, 136, 136);
 }
 
-.my_box_mod_btn{
+.my_box_mod_btn {
   float:left;
   background: white;
   font-size: 0.85rem;
@@ -127,7 +124,7 @@ a {
 }
 
 .my_box_grade hr,
-.my_box hr{
+.my_box hr {
   width:100%;
   border-top: 0.001px solid rgb(216, 216, 216);
   border-bottom: 0.001px solid white;
@@ -135,107 +132,22 @@ a {
   margin-bottom:1.3rem;
 }
 
-.my_box table{
+.my_box table {
   font-size:1.05rem;
 }
 
-.my_box tr{
+.my_box tr {
   height:2.7rem;
 }
 
-.my_box_table_1st_td{
+.my_box_table_1st_td {
   width:35%;
   font-weight: bold;
 }
 
-
-/* ------------------------------main3 css------------------------------ */
-
-.my_box_mod_btn:hover,
-.show_table:hover {
+.my_box_mod_btn:hover {
   background-color: #f3f3f3;
 }
-
-.my_box_grade {
-  display: flex;
-  flex-direction: column;
-  width: 68rem;
-  height: auto;
-  margin: 1rem 1rem 4rem;
-  border: 1px solid rgb(216, 216, 216);
-  background-color: white;
-}
-
-
-
-.section {
-  padding: 16px;
-  text-align: center;
-}
-
-/* 카드들 레이아웃 */
-.about {
-  display: inline-flex;
-  gap: 1em;
-  margin-top: 24px;
-}
-/* 카드와 아이콘 */
-.about__card {
-  padding: 48px;
-  text-align: center;
-  color: white;
-  background-color: #3e3f3f;
-  border-radius: 12px;
-}
-.about__icon {
-  width: 100px;
-  height: 150px;
-  opacity: 0.25;
-}
-/* 카드 안의 텍스트 */
-.about__title._1 {
-  color: #FFB974;
-}
-.about__title._2 {
-  color: #4e88c2;
-}
-.about__title._3 {
-  color: #FFBDCE;
-}
-
-.about__text {
-  margin-top: 0.8em;
-  font-size: 18px;
-}
-
-.about__card {
-  width: 200px;
-  cursor: pointer;
-  transition: all 350ms;
-}
-/* 영역에 마우스 오버시 해당 카드 외 축소 */
-.about:hover .about__card:not(:hover) {
-  transform: scale(0.9);
-}
-  /* 흐림 필터링을 위한 덮개 */
-.about:hover .about__card:not(:hover)::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px);
-}
-/* 롤 오버된 카드 */
-.about__card:hover {
-  transform: scale(1.04);
-}
-.about__card:hover .about__icon {
-  opacity: 1;
-}
-
 
 
 /* ------------------------------footer css------------------------------ */
@@ -269,11 +181,6 @@ a {
   margin-left: 150px;
   margin-right: 150px;
 }
-
-
-
-
-
 
 
 /* ------------------------------modal css------------------------------ */
@@ -318,7 +225,7 @@ a {
   -ms-transform:translate(-50%, -50%);
 }
 
-.update_modal_content{
+.update_modal_content {
   text-align: center;
   background-color: #fefefe;
   border-radius: 5px;
@@ -371,7 +278,7 @@ a {
   cursor: pointer;
 }
 
-.login_title{
+.login_title {
   text-align: center;    
   padding-top:2rem;
   padding-left:0.5rem;
@@ -390,8 +297,9 @@ a {
   cursor: pointer;
   outline: 0;
 }
-
-/* ---------------------------------( register(modal) )---------------------------------------- */
+.login_btn:hover{
+  background: rgb(64, 56, 220);
+}
 
 .regi_box {
   text-align:center;
@@ -404,8 +312,7 @@ a {
   font-weight: bold;
 }
 
-
-.regi_box label{
+.regi_box label {
   text-align: left;
   font-size:1.1rem;
   margin-top: 2rem;
@@ -425,7 +332,7 @@ a {
   color:rgb(143, 143, 143);
 }
 
-.regi_box select{
+.regi_box select {
   font-size: 1rem;
   background: none;
   border:0.01px solid rgb(216, 216, 216);
@@ -435,7 +342,7 @@ a {
   height:2.8rem;
 }
 
-.regi_btn{
+.regi_btn {
   background: rgb(164, 26, 55);
   width:15%;  
   color: white;
@@ -449,11 +356,4 @@ a {
   outline: 0;
   margin-top:2.5rem;
   margin-bottom: 3rem;
-}
-
-.regi_guide{
-  text-align: left; 
-  color:#d32f2f; 
-  font-size:0.9rem; 
-  font-weight: lighter;
 }
