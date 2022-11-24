@@ -1,0 +1,9 @@
+Dormi_1.html
+1.<link href="./Dormi_1.css" rel="stylesheet">
+css랑 js파일 통합으로 묶어서 상대경로 바뀝니다
+
+2.<hr style="margin:2.5rem auto 2.5rem; width:1080px; height:2px; border:0px; background-color: rgb(145, 140, 140);">
+width : 45%   -> width : 1080px
+
+3.Dormi_all.css (통합된 CSS파일)
+.dormi_box_wrap 에서 padding-left랑 right 삭제
